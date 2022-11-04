@@ -3,9 +3,7 @@ public class Transaksi {
     public int biaya;
     public int diskon;
 
-    public void bayar(){
 
-    }
     public int hitung(int a,int b){
         setTarif(a);
         return a*b;

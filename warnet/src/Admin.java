@@ -5,7 +5,6 @@ public class Admin {
     User u = new User();
     Transaksi t = new Transaksi();
     Member m = new Member();
-    Komputer k = new Komputer();
     Scanner in=new Scanner(System.in);
     protected void melihat(int a, int b){
         System.out.println("Id user : "+a);
@@ -59,9 +58,7 @@ public class Admin {
         t.setDiskon(a*diskon/100);
         return t.setDiskon(a*diskon/100);
     }
-    private void menghapus(){
 
-    }
 
     public String getUesrname() {
         return uesrname;
