@@ -3,7 +3,7 @@ public class Member extends User{
     private String username;
     private String password;
 
-    protected void melihat(int waktu){
+    protected final void melihat(int waktu){
         System.out.println("id user :"+id);
         System.out.println("member : "+username);
         System.out.println("lama memesan :"+waktu+" jam");

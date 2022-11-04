@@ -6,7 +6,7 @@ public class Admin {
     Transaksi t = new Transaksi();
     Member m = new Member();
     Scanner in=new Scanner(System.in);
-    protected void melihat(int a, int b){
+    protected final void melihat(int a, int b){
         System.out.println("Id user : "+a);
         System.out.println("biaya : "+b);
     }
