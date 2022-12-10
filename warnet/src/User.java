@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-public class User {
+public class User extends Pelangan{
     protected int id;
     protected int waktu;
 
