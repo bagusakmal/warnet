@@ -4,6 +4,14 @@ public class User extends Pelangan{
     protected int id;
     protected int waktu;
 
+    public int mengisi() {
+        return 0;
+    }
+
+    @Override
+    public void melihat() {
+    }
+
     protected void melihat(int waktu){
         System.out.println("id user :"+id);
         System.out.println("lama memesan :"+waktu+" jam");
