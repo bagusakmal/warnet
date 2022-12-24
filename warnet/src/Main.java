@@ -23,7 +23,6 @@ public class Main {
         boolean ad;
         String ph="y";
 
-
         while (ph.equals("y")) {
             String pilih = "y";
 
@@ -47,10 +46,14 @@ public class Main {
                             pi = in.nextInt();
                             switch (pi) {
                                 case 1:
-                                    System.out.println("Masukkan id user : ");
-                                    int ka = in.nextInt();
-                                    int jml = (int) ue.get(ka);
-                                    a.melihat(ka, jml);
+                                    try {
+                                        System.out.println("Masukkan id user : ");
+                                        int ka = in.nextInt();
+                                        int jml = (int) ue.get(ka);
+                                        a.melihat(ka, jml);
+                                    }catch (Exception e){
+                                        System.out.println("belum ada data");
+                                    }
                                     break;
                                 case 2:
                                     harga = a.mengatur();

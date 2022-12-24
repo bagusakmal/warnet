@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.io.*;
+
 public class Admin {
     private String uesrname;
     private String password;
@@ -9,6 +11,16 @@ public class Admin {
     protected final void melihat(int a, int b){
         System.out.println("Id user : "+a);
         System.out.println("biaya : "+b);
+        java.io.File file = new java.io.File("hasil.txt");
+        try{
+            java.io.PrintWriter output = new java.io.PrintWriter(file);
+            output.println("\t\t Keterangan Biaya");
+            output.println("Id user : "+a);
+            output.println("Biaya : "+b);
+            output.close();
+        }catch (FileNotFoundException e){
+            System.out.println("tidak ada file");
+        }
     }
     private String user(){
         String u = "admin";
